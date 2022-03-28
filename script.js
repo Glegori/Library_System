@@ -69,7 +69,8 @@ const userRender = `<div class="mainArea" style="display: grid; grid-template-ro
     <div class="borrowedSec" style="grid-column: 1; height: 100%; width:100%;  padding: 10px;"><h4 style="border-bottom: 1px solid black; display: flex; justify-content: space-between;">Books Borrowed<a href=""><p style="font-size: small; margin-top: 10px; margin-right: 10px;">view all</p></a></h4></div>
     <div class="sideBar" style="grid-column: 2; height: 100%; width:100%;  padding: 10px; border: 1px solid black; border-radius: 5px;"><p style="border-bottom: 1px solid black;">Returns</p></div>
 </div>
-<div class="bottomSec" style="grid-row: 2; width: 100%; height: 100%;  padding: 10px;">
-    <h4 style="border-bottom: 1px solid black; display: flex; justify-content: space-between;">Browse Library<a href=""><p style="font-size: small; margin-top: 10px; margin-right: 10px;">view all</p></a></h4>
+<div class="bottomSec" style="grid-row: 2; width: 100%; height: 100%;  padding: 10px; display: grid; grid-template-columns: 4fr 1fr; column-gap: 10px">
+    <div class="browseSec" style="grid-column:1;"><h4 style="border-bottom: 1px solid black; display: flex; justify-content: space-between;">Browse Library<a href=""><p style="font-size: small; margin-top: 10px; margin-right: 10px;">view all</p></a></h4></div>
 </div>
 </div>`
+
