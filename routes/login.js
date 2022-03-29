@@ -16,7 +16,7 @@ route.route('/').post((req, res) => {
     var typeoflogin = req.body.typeoflogin
     var password = req.body.password;
 
-    if(typeoflogin==null || username == null || password==null){
+    if(typeoflogin==null || uname == null || password==null){
         res.render("login.ejs", { e: "Please enter all the details"})
     }else{
 
