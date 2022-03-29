@@ -1,7 +1,7 @@
 //gathering module
 const route = require("express").Router();
 //getting the model exported from other file
-let Book = require('../models/book.model');
+let Book = require('../backend/models/book.model.js');
 
 //get request for base page stores users in response json
 route.route('/').get((req, res) => {
