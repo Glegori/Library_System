@@ -3,8 +3,8 @@ const Schema = mong.Schema;
 
 const authSchema = new Schema({
         authorId: {type: Number, required: true},
-        fname: {type: String, required: true},
-        lname: {type: String, required: true},
+        fName: {type: String, required: true},
+        lName: {type: String, required: true},
         },{timestamps:true}
 );
 
