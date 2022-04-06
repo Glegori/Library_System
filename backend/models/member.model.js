@@ -6,9 +6,9 @@ const memberSchema = new Schema({
         fname: {type: String, required: true},
         lname: {type: String, required: true},
         email: {type: String, required: true},
-        address: {type: String, required: true},
         books:{type: [Number], required: true},
-        Outstanding:{type: Number, required: true},
+        outstanding:{type: Number, required: true},
+        address: {type: String, required: true}
         },{timestamps:true}
 );
 

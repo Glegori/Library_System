@@ -2,11 +2,12 @@ const mong = require('mongoose');
 const Schema = mong.Schema;
 
 const borrowSchema = new Schema({
-        borrowersId: {type: Number, required: true},
+        borroweId: {type: Number, required: true},
         memberId: {type: Number, required: true},
-        bookId: {type: Number, required: true},
+        bookId: {type: [Number], required: true},
         issueDate:{type: Date, required: true},
-        dueDate:{type: Date, required: true}
+        dueDate:{type: Date, required: true},
+        return:[{bookId:[Number], dateOfReturn:Date}]
         },{timestamps:true}
 );
 
