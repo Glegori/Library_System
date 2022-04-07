@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //preps for json and sets up middleware to allow other origination addresses
 app.use(cors());
-//app.use(xprs.json());
+app.use(xprs.json());
 
 //to map to the models through routes
 const bookRouter = require('../routes/books.js');
