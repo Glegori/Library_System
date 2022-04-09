@@ -21,7 +21,6 @@ route.route('/addBook').post((req, res) => {
     const edition = req.body.edition;
     
     const newBook = new Book({bookId, title, edition, publisher, authorId});
-    console.log(newBook);
 
     //Author.findOne({"authorId":authorId}).catch(err => res.status(400).json('Err: author not found please add author'));
     newBook.save()
