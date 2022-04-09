@@ -7,9 +7,12 @@ routes/authors.js
 routes/borrows.js
     add a borrow crud utility based on member id with member id validation
         this should modify the members held books as well
-    add a utility to view holds based on member id number
+    add a utility that takes borrowId and gives you the information for books still needing to be returned
+    add a function that allows you to return books(this will likely be one of the more complex ones)
+        needs to add to the return value and needs to remove books from members held
 routes/members.js
     create add members function
+    add a utility to view holds based on member id number
     view member details function(returns proper books especially important)
 routes/transactions.js
     creates transactions based on member and set amount paid
