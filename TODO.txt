@@ -1,0 +1,16 @@
+routes/books.js
+    add sections to the books routing file to search by author, publisher ect
+    fix adding book checking if the author is on file or not
+routes/authors.js
+    add this file
+    add a create author section
+routes/borrows.js
+    add a borrow crud utility based on member id with member id validation
+        this should modify the members held books as well
+    add a utility to view holds based on member id number
+routes/members.js
+    create add members function
+    view member details function(returns proper books especially important)
+routes/transactions.js
+    creates transactions based on member and set amount paid
+        will modify the members outstanding value

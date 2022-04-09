@@ -7,7 +7,7 @@ const borrowSchema = new Schema({
         bookId: {type: [Number], required: true},
         issueDate:{type: Date, required: true},
         dueDate:{type: Date, required: true},
-        return:[{bookId:[Number], dateOfReturn:Date}]
+        return:[{returnBookId:[Number], dateOfReturn:Date}]
         },{timestamps:true}
 );
 
