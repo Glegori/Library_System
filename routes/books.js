@@ -2,6 +2,7 @@
 const route = require("express").Router();
 //getting the model exported from other file
 let Book = require('../backend/models/book.model.js');
+let Author = require('../backend/models/author.model.js');
 
 //get request for base page stores users in response json
 route.route('/').get((req, res) => {
@@ -11,15 +12,20 @@ route.route('/').get((req, res) => {
 });
 //adding a new book using post
 //todo fill in the rest of the schema details
-route.route('/add').post((req, res) => {
+route.route('/addBook').post((req, res) => {
     //fill in rest
-    const bookId = req.body.BookId
+    const bookId = req.body.bookId;
+    const title = req.body.title;
+    const publisher = req.body.publisher;
+    const authorId = req.body.authorId;
+    const edition = req.body.edition;
+    
+    const newBook = new Book({bookId, title, edition, publisher, authorId});
 
-    //builds a new book based on the model
-    let newBook = new Book({bookId})
+    //Author.findOne({"authorId":authorId}).catch(err => res.status(400).json('Err: author not found please add author'));
     newBook.save()
-    .then(() => res.json("response to new book goes here"))
-    .catch(err => res.status(400).json('Err: ' + err));
+    .then(() => res.json("result: new book " + newBook.title + " has been added"))
+    .catch(err => res.status(400).json('Err thrown on adding: ' + err));
 });
 //finds a book by id :id is like variable in this case
 route.route('/:id').get((req,res) => {
