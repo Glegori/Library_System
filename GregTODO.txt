@@ -1,0 +1,6 @@
+routes/books.js
+    figure out why its not letting me pass strings into the json search function
+
+routes/borrows.js
+    add the return object and key the schema to it? more investigation required
+    troubleshoot everything nothing was tested due to the above point
