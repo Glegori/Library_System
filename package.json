@@ -9,13 +9,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "author": [
-    "Amit Bhattacharya",
-    "Raghuvansh Raj Giri",
-    "Merryl Tuscano",
-    "Basil Joseph Benny",
-    "Gregory Billings"
-  ],
+  "author": "Amit Bhattacharya, Raghuvansh Raj Giri, Merryl Tuscano, Basil Joseph Benny, Gregory Billings",
   "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
