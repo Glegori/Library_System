@@ -32,8 +32,11 @@ app.use(xprs.json());
 const bookRouter = require('../routes/books.js');
 app.use('/books', bookRouter);
 
+const borrowRouter = require('../routes/borrows.js');
+app.use('/borrows', borrowRouter);
+
 const loginRouter = require('../routes/login.js');
-app.use('/', loginRouter)
+app.use('/', loginRouter);
 
 
 app.use(xprs.static("../public"));
