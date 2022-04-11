@@ -48,64 +48,66 @@ route.route('/findbook').get((req, res) => {
     const publisher = req.body.publisher;
     const authorId = req.body.authorId;
 
-    let params = "{";
+    let params = "";
     if (bookId != null) {
-        params = params + " bookId: " + bookId;
+        params = params + " bookId:" + bookId;
         if (title != null) {
-            params = params + ", title: '" + title + "'";
+            params = "$and:[{" +params + "}, {title: '" + title + "'}";
             if (publisher != null) {
-                params = params + ", publisher: '" + publisher + "'";
+                params = params + ", publisher:'" + publisher + "'";
                 if (authorId) {
-                    params = params + ", authorId: " + authorId;
+                    params = params + ", {authorId:" + authorId + "}";
                 }
             } else {
                 if (authorId != null) {
-                    params = params + ", authorId: " + authorId;
+                    params = params + ", {authorId:" + authorId + "}";
                 }
             }
         } else {
             if (publisher != null) {
-                params = params + ", publisher: '" + publisher + "'";
+                params = "$and:[{" + params + "}, {publisher:'" + publisher + "'}";
                 if (authorId != null) {
-                    params = params + ", authorId:" + authorId;
+                    params = params + ", {authorId:" + authorId + "}";
                 }
             } else {
                 if (authorId != null) {
-                    params = params + ", authorId:" + authorId;
+                    params = "$and:[{" + params + "}, {authorId:" + authorId + "}";
                 }
             }
         }
     } else {
         if (title != null) {
-            params = params + "title: '" + title + "'";
+            params = params + "title:'" + title + "'";
             if (publisher != null) {
-                params = params + ", publisher: '" + publisher + "'";
+                params = "$and:[{" + params + "}, {publisher:'" + publisher + "'}";
                 if (authorId != null) {
-                    params = params + ", authorId: " + authorId;
+                    params = params + ", {authorId:" + authorId + "}";
                 }
             } else {
                 if (authorId != null) {
-                    params = params + ", authorId: " + authorId;
+                    params = "$and:[{" + params + "}, {authorId:" + authorId +"}";
                 }
             }
         } else {
             if (publisher != null) {
-                params = params + "publisher: '" + publisher + "'";
+                params = params + "publisher:'" + publisher + "'";
                 if (authorId != null) {
-                    params = params + ", authorId: " + authorId ;
+                    params = "$and:[{" + params + "}, {authorId:" + authorId +"}";
                 }
             } else {
                 if (authorId != null) {
-                    params = params + "authorId: " + authorId;
+                    params = params + "authorId:" + authorId;
                 }
             }
         }
     }
-    params = params + "}"
     console.log(params);
 
-    Book.find(params)
-        .then(book => res.json(book))
+    Book.find({ params })
+        .then(book => {
+            console.log(book)
+            res.json(book)
+        })
         .catch(err => res.status(400).json('Err: ' + err))
 })
 
