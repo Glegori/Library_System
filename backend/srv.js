@@ -35,6 +35,15 @@ app.use('/books', bookRouter);
 const borrowRouter = require('../routes/borrows.js');
 app.use('/borrows', borrowRouter);
 
+const authorRouter = require('../routes/authors.js');
+app.use('/authors', authorRouter);
+
+const transactionRouter = require('../routes/transactions.js');
+app.use('/transactions', transactionRouter);
+
+const memberRouter = require('../routes/members.js');
+app.use('/members', memberRouter);
+
 const loginRouter = require('../routes/login.js');
 app.use('/', loginRouter);
 

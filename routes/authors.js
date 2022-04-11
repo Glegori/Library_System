@@ -17,7 +17,7 @@ route.route('/addAuthor').post((req, res) => {
     const fName = req.body.fName;
     const lName = req.body.lName;
 
-    Book.find()
+    Author.find()
         .sort('-authorId')
         .limit(1)
         .then(author => {
@@ -31,7 +31,6 @@ route.route('/addAuthor').post((req, res) => {
         });
 })
 
-//finds a book by id :id is like variable in this case
 route.route('/findauthor').get((req, res) => {
     const authorId = req.body.authorId;
     const fName = req.body.fName;
