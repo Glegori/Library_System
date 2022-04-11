@@ -24,7 +24,7 @@ route.route('/addBook').post((req, res) => {
         .limit(1)
         .then(book => {
             let bookId = book[0].bookId + 1;
-            const newBook = new Book({ bookId, title, edition, publisher, authorId });
+            const newBook = new Book({ bookId, title, edition, publisher, authorId});
             Author.findOne({ "authorId": authorId })
                 .then(author => {
                     console.log(author);
