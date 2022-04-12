@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Rowdies:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.maincont {
+  display: flex;
+  grid-template-columns: 1fr 5fr;
+  height: 100%;
+  width: 100%;
+  /* padding: 10px; */
+  padding-right: 10px;
+  padding-left: 10px;
+  column-gap: 10px;
+}
+
+.leftcont {
+  grid-column: 1;
+  /* border: 2px black solid; */
+  height: 100vh;
+  /* height: 100vh;  */
+  position: sticky;
+  top: 0;
+  /* margin-right: 5px; */
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  row-gap: 10px;
+}
+.rightcont {
+  grid-column: 2;
+  /* border: 2px black solid; */
+  height: 100%;
+  width: 100%;
+  /* position: sticky; */
+  top: 0;
+  /* margin-left: 5px; */
+  display: grid;
+  /* grid-template-rows: 1fr 5fr; */
+  /* border: solid green 1px; */
+  row-gap: 10px;
+}
+
+.logo {
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #062f4f;
+  color: white;
+  /* border: solid green 1px; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.profile {
+  grid-row: 2;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: solid rgb(0, 0, 0) 1px;
+  background-color: #062f4f;
+  color: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+.profile a {
+  text-decoration: none;
+  color: white;
+}
+.profCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-bottom: 200px;
+  grid-row: 2;
+}
+.header {
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  /* padding-bottom: 50px; */
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.profile h5 {
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid black 1px;
+  margin: 20px;
+}
+.profCont {
+}
+
+/* .container {
+  display: flex;
+  /* max-height: 50%; 
+} */
+
+/* .card {
+  max-height: 100px;
+  max-width: 100px;
+  border: none;
+  font-size: 0.5rem;
+  margin-right: 100px;
+} */
+.card p {
+  padding-left: 10px;
+}
+.card h2 {
+  padding-left: 5px;
+}
+.bookCover {
+  height: 100%;
+}
+.bookcovercont {
+  height: 150px;
+}
+.bookTitle {
+  /* margin-top: 5px; */
+  font-size: 0.8rem;
+}
+.retCont {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 80%;
+}
+#ret {
+  display: flex;
+  flex-direction: row;
+  height: 2px;
+}
+.retCard h2 {
+  font-size: 1rem;
+}
+.retCard p {
+  font-size: 0.8rem;
+}
+.retCard {
+  margin-top: 10px;
+  padding: 5px;
+}
+.card {
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  font-size: 0.5rem;
+  margin-right: 100px;
+}
+.container {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-height: 50%;
+}
+.crd {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: space-between; */
+  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 0.5rem;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+.dets {
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+.bDets h2 {
+  margin-bottom: 25px;
+}
+.bDets p {
+  margin-bottom: 10px;
+}
+.avatar {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+.borrowedSec h4 {
+  background-color: #062f4f;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  /* border-radius: 5px; */
+}
+
+.sideBar p:first-child {
+  background-color: #062f4f;
+  color: white;
+  padding: 20px;
+}
+.profPic {
+  text-align: center;
+  /* border: 1px solid black; */
+  margin-right: 10px;
+}
+.profcontainer {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  padding-right: 50px;
+}
+.profDet {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  /* align-items: center; */
+  font-size: 0.75em;
+}
+.profDet h3 {
+  margin-bottom: 10px;
+}
+.profDet p {
+  margin-bottom: 30px;
+}
+.editProfForm {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.editProfForm form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* margin-top: 10px; */
+  background-color: #fefefe;
+  margin: 10% auto;
+  width: 50%;
+  border: 1px solid #888;
+}
+.closeButt {
+  position: fixed;
+  top: 19.1%;
+  left: 20.78%;
+  padding: 5px;
+  /* z-index: -1; */
+}
+.editProfForm form button {
+  align-self: flex-end;
+  width: 200px;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.close {
+  display: none;
+}
+.libcat {
+  width: 150px;
+  border: 1px solid black;
+}
+.libcat img {
+  padding: 10px;
+  display: block;
+  margin: auto;
+}
+.bookAction p {
+  background-color: #062f4f;
+  /* padding: 2px; */
+  color: white;
+  margin-top: 10px;
+}
