@@ -55,7 +55,7 @@
   /* padding: 20px 0; */
 
   /* width: 50%; */
-  height: 50%;
+  height: 70%;
   /* border: solid 5px black; */
   grid-column: 2;
   display: flex;
@@ -88,6 +88,9 @@
   /* border-top: black solid 3px; */
   background-color: #062f4f;
   color: white;
+}
+.footer h5 {
+  margin-bottom: 30px;
 }
 .libDet {
   grid-column: 1;

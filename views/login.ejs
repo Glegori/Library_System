@@ -19,6 +19,7 @@
                 <h3 id="tit">LMS</h3>
             </div>
             <form method="POST" class="userLog" id="userLog">
+                <label><h6 style="border-bottom: 1px solid black; padding-bottom: 10px; width: fit-content;">Enter your library username and password</h6></label>
                 <input type="text" placeholder="username" class="inp username" name="username">
                 <input type="password" placeholder="password" class="inp password" name="password">
                 <div class="rad">
@@ -26,19 +27,21 @@
                     <label for="user">USER</label>
                     <input type="radio" name="typeoflogin" id="typeoflogin admiN" value="admin">
                     <label for="admin">ADMIN<label>
-                    <p style="color: red; margin-left: 10px;"> <%= e%></p>
+                    
                 </div>
+                
                 <button type="submit" class="submitBtn" id="submitBtn">LOGIN</button>
+                <p style="color: red; font-size: small;"> <%= e%></p>
             </form>
         </div>
 
         <div class="footer">
             <div class="libDet">
                 <h5>Library Name</h5>
-                <p>1122 Westwood Street, V34 5TE</p>
+                <p><em>1122 Westwood Street, V34 5TE</em></p>
             </div>
             <div class="emailPhone">
-                <!-- <h5>Library Contact</h5> -->
+                <h5>Library Contact</h5>
                 <p><em>Email</em> : info@library.com</p>
                 <p><em>Phone No.</em> : 604-518-9807</p>
             </div>
