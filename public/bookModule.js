@@ -10,21 +10,21 @@ const books = [
     },
     {
       id: '2',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
+      name: 'To Kill a Mockingbird',
+      author: 'Harper Lee',
       moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
+      borrowedDate: '15/03/2022',
+      returnDate: '10/08/2022',
+      url: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg'
     },
     {
       id: '3',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
+      name: 'The Great Gatsby',
+      author: 'F.Scott Fitzgerald',
       moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
+      borrowedDate: '08/05/2022',
+      returnDate: '07/06/2022',
+      url: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg'
     }
     // {
     //   id: '4',

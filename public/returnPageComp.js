@@ -6,46 +6,20 @@ const books = [
       name: 'The Fault in Our Stars',
       author: 'John Green',
       moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
+      borrowedDate: '12/10/2021',
+      returnDate: '18/01/2022',
       url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
     },
     {
         id: '2',
-        name: 'Da Vinci Code',
-        author: 'Dan Brown',
+        name: 'Harry Potter and The Sorcerers Stone',
+        author: 'J K Rowling',
         moons: 'none',
-        borrowedDate: '22/03/2022',
-        returnDate: '09/05/2022',
+        borrowedDate: '12/03/2021',
+        returnDate: '18/05/2021',
         url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
     },
-    {
-      id: '3',
-      name: 'The Fault in Our Stars',
-      author: 'John Green',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
-    },
-    {
-      id: '4',
-      name: 'The Fault in Our Stars',
-      author: 'John Green',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
-    },
-    {
-      id: '5',
-      name: 'The Fault in Our Stars',
-      author: 'John Green',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
-    }
+    
     
     // {
     //   id: '4',

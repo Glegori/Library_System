@@ -1,3 +1,5 @@
+let fs = require('fs')
+
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -51,6 +53,9 @@ app.post("/", function(req, res){
 app.get('/dash', function(req,res){
     res.render("dashboard.ejs")
 })
+app.get('/home', function(req, res){
+    res.render("userDashboard.ejs",{u: username})
+})
 app.get('/manageaccount', function(req,res){
     res.render("manageaccount.ejs", {})
 })
@@ -72,6 +77,9 @@ app.get('/viewemps', function(req,res){
 app.get('/searchemps', function(req,res){
     res.render("search.ejs")
 })
+
+
+
 app.listen(port, function(){
     console.log(`server running on port : ${port}`);
 })
