@@ -160,12 +160,12 @@
   font-size: 0.5rem;
   margin-right: 100px;
 }
-/* .container {
+.container {
   display: flex;
   margin-top: 10px;
   flex-direction: column;
   /* /* max-height: 50%; */
-/* }  */
+}
 .crd {
   display: flex;
   flex-direction: row;
@@ -239,7 +239,6 @@
   margin-bottom: 30px;
 }
 .editProfForm {
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -278,7 +277,4 @@
 }
 .close {
   display: none;
-}
-.open {
-  display: block;
 }

@@ -1,31 +1,37 @@
+
+
 const books = [
     {
       id: '1',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
+      name: 'Amit Bhattacharya',
+      email: 'amit@gmail.com',
+      address: '1188 Brookside Street',
+      pincode: 'V3E 5T2',
+      libraryId: '1001',
+      phone: '6048768789',
+      url: 'https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Round&hatColor=PastelBlue&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale'
     },
     {
-      id: '2',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
-    },
-    {
-      id: '3',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
-    }
+        id: '2',
+        name: 'Amit Bhattacharya',
+        email: 'amit@gmail.com',
+        address: '1188 Brookside Street',
+        libraryId: '1001',
+        pincode: 'V3E 5T2',
+        phone: '6048768789',
+        url: 'https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Round&hatColor=PastelBlue&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale'
+      },
+      {
+        id: '3',
+        name: 'Amit Bhattacharya',
+        email: 'amit@gmail.com',
+        address: '1188 Brookside Street',
+        libraryId: '1001',
+        pincode: 'V3E 5T2',
+        phone: '6048768789',
+        url: 'https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Round&hatColor=PastelBlue&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale'
+      },
+    
     // {
     //   id: '4',
     //   name: 'Mars',
@@ -93,13 +99,31 @@ const books = [
   ]
 const Books = (props) => {
     return (
-      <div className="card">
+      <div className="card crd">
         <div className="bookcovercont">
           <img className="bookCover" src={props.imgurl} alt="The Da Vinci Code"></img>
         </div>
-        <h2 className="bookTitle">{props.title}</h2>
-        <p>{props.author}</p>
-        <p>Return by : {props.retDate}</p>
+        <div className="dets">
+            <div className="auth-title">
+                <h1>Name</h1>
+                <h2 className="bookTitle">{props.title}</h2>
+                <p>Email : {props.email}</p>
+                <p>Phone No. : +1 {props.phone}</p>
+            </div>
+            
+            <div className="dates bDets">
+                <h1>Address</h1>
+                <p>{props.address}</p>
+                <p>Pincode : {props.pin}</p>
+            
+            </div>
+            
+            <div className="manageB bDets">
+                <h1>Library ID</h1>
+                <p>{props.libId}</p>
+            </div>
+
+        </div>
         
       </div>
     )
@@ -107,10 +131,10 @@ const Books = (props) => {
 
   const App = () => {
     return (
-      <div className="container" id="bookCards">
+      <div className="container">
   
         {books.map(books => (
-          <Books title={books.name} imgurl={books.url} author={books.author} retDate={books.returnDate}/>)
+          <Books title={books.name} imgurl={books.url} email={books.email} phone={books.phone} address={books.address} pin={books.pincode} libId={books.libraryId} />)
         )}
   
       </div>
@@ -122,3 +146,4 @@ const Books = (props) => {
     <App />,
     document.getElementById('root')
   )
+

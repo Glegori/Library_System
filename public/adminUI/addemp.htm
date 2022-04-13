@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./adminStyle.css">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Rowdies:wght@300;400;700&display=swap");
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        .formUserCont{
+            height: fit-content;
+            border: 1px black solid;
+            margin: 20px;
+        }
+        .nameOfForm{
+            background-color: #062f4f;
+            color: white;
+            padding: 10px;
+        }
+        .addEmpForm{
+            padding: 10px;
+        }
+
+        .addEmpForm input{
+            width: 100%;
+        }
+        button{
+            margin-top: 10px;
+            width: 100px;
+            padding: 10px;
+            background-color: #062f4f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="maincont">
+            <div class="leftcont" >
+                <div class="logo">
+                    <h1>LMS</h1>
+                </div>
+                <div class="profile">
+                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light" alt="" class="avatar">
+                    <!-- <script type="module">
+                        import {user} from"./users.json";
+                        console.log("user");
+                        document.querySelector('.avatar').src = `${user[0].userpicture}`
+                    </script> -->
+                    <div class="profCont">
+                        <a href="./userPage.htm"><p>Home</p></a>
+                    
+                        <a href="./libraryCatalog.htm"><p>View Library Info</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightcont">
+                <!-- <div class="header">
+                    <h2>Welcome, UserName</h2>
+                </div> -->
+                <div class="mainArea" style="display: grid; grid-template-rows: 1fr 1fr; row-gap: 10px;">
+                    <div class="topSec" style="grid-row: 1/span 2; display: flex; grid-template-columns: 4fr 1fr; column-gap: 10px; width: 100%; height: 100%; ">
+                        <div class="borrowedSec" style= "height: 100%; width:100%;  padding-bottom: 10px;"><h4 style="display: flex; justify-content: space-between;">Add User</h4>
+                        
+                            <div class="formUserCont">
+                                <h1 class="nameOfForm">
+                                    Enter The Details
+                                </h1>
+                                <form class="addEmpForm">
+                                    <label><h2>Name</h2></label>
+                                    <input type="text" name="name" id="nameOfUser">
+                                    <label><h2>Email</h2></label>
+                                    <input type="email" name="email" id="emailOfUser">
+                                    <label><h2>Address</h2></label>
+                                    <input type="text" name="address" id="addressOfUser">
+                                    <label><h2>Pincode</h2></label>
+                                    <input type="text" name="pin" id="pinOfUser">
+                                    <label><h2>LibraryID</h2></label>
+                                    <input type="text" name="libid" id="libId">
+                                    <label><h2>Phone</h2></label>
+                                    <input type="text" name="name" id="phoneOfUser">
+                                    <button type="submit">Add</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="sideBar" style=" height: 100vh; width:30%; padding-bottom: 10px; position: sticky;
+                        top: 0;"><p style="border-bottom: 1px solid black; text-align: center;">Time</p>
+                            <div style="text-align:center;padding:1em 0; text-align: center;"> <iframe src="https://free.timeanddate.com/clock/i8a7d7th/n1087/fn8/fs26/fc062f4f/ftb/tt0/tw0/tm1/tb4" frameborder="0" width="189" height="61"></iframe>
+    
+    
+    
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="bottomSec" style="grid-row: 2; width: 100%; height: 100%;  padding: 10px;">
+                        <h4 style="border-bottom: 1px solid black; display: flex; justify-content: space-between;">Browse Library<a href=""><p style="font-size: small; margin-top: 10px; margin-right: 10px;">view all</p></a></h4>
+                        <div id="root2">
+    
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    
+    
+</body>
+</html>

@@ -36,10 +36,10 @@ app.post("/", function(req, res){
 
         if(validateLogin(username, password)){
             if(typeoflogin==="user"){
-                res.render("dashboard.ejs", {loginType: "User", u: username, render:userRender});
+                res.render("userDashboard.ejs", {loginType: "User", u: username, render:userRender});
             }
             if(typeoflogin==="admin"){
-                res.render("dashboard.ejs", {loginType: "Admin", u: username, render:userRender});
+                res.render("admindashboard.ejs", {loginType: "Admin", u: username, });
             }
     
         }else {
@@ -51,7 +51,27 @@ app.post("/", function(req, res){
 app.get('/dash', function(req,res){
     res.render("dashboard.ejs")
 })
-
+app.get('/manageaccount', function(req,res){
+    res.render("manageaccount.ejs", {})
+})
+app.get('/borrow', function(req,res){
+    res.render("viewborrow.ejs")
+})
+app.get('/returns', function(req,res){
+    res.render("returnpage.ejs")
+})
+app.get('/libraryCatalog', function(req,res){
+    res.render("libcat.ejs")
+})
+app.get('/addemps', function(req,res){
+    res.render("addemployees.ejs")
+})
+app.get('/viewemps', function(req,res){
+    res.render("viewemployees.ejs")
+})
+app.get('/searchemps', function(req,res){
+    res.render("search.ejs")
+})
 app.listen(port, function(){
     console.log(`server running on port : ${port}`);
 })

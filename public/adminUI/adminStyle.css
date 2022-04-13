@@ -73,7 +73,7 @@
 .profCont {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: left;
   margin-top: 30px;
   padding-left: 50px;
@@ -100,7 +100,8 @@
   border: solid black 1px;
   margin: 20px;
 }
-.profCont {
+.profCont p {
+  margin-bottom: 10px;
 }
 
 /* .container {
@@ -125,7 +126,8 @@
   height: 100%;
 }
 .bookcovercont {
-  height: 150px;
+  height: 100px;
+  margin-right: 10px;
 }
 .bookTitle {
   /* margin-top: 5px; */
@@ -160,12 +162,12 @@
   font-size: 0.5rem;
   margin-right: 100px;
 }
-/* .container {
+.container {
   display: flex;
   margin-top: 10px;
   flex-direction: column;
   /* /* max-height: 50%; */
-/* }  */
+}
 .crd {
   display: flex;
   flex-direction: row;
@@ -239,7 +241,6 @@
   margin-bottom: 30px;
 }
 .editProfForm {
-  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -274,11 +275,43 @@
 .buttons {
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .close {
   display: none;
 }
-.open {
-  display: block;
+.indButtons {
+  display: flex;
+  height: 150px;
+  /* text-align: center; */
+  justify-content: center;
+  width: 70%;
+  font-size: 1em;
+  /* border: 1p solid; */
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  padding: 0 20px;
+  margin-right: 50px;
+  margin-bottom: 30px;
 }
+
+/* <div class="formUserCont">
+        <h1 class="nameOfForm">
+            Add User
+        </h1>
+        <form class="addEmpForm">
+            <label><h2>Name</h2></label>
+            <input type="text" name="name" id="nameOfUser">
+            <label><h2>Email</h2></label>
+            <input type="email" name="email" id="emailOfUser">
+            <label><h2>Address</h2></label>
+            <input type="text" name="address" id="addressOfUser">
+            <label><h2>Pincode</h2></label>
+            <input type="text" name="pin" id="pinOfUser">
+            <label><h2>LibraryID</h2></label>
+            <input type="text" name="libid" id="libId">
+            <label><h2>Phone</h2></label>
+            <input type="text" name="name" id="phoneOfUser">
+        </form>
+    </div> */

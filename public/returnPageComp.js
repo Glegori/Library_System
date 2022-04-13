@@ -1,31 +1,52 @@
+
+
 const books = [
     {
       id: '1',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
+      name: 'The Fault in Our Stars',
+      author: 'John Green',
       moons: 'none',
       borrowedDate: '22/03/2022',
       returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
+      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
     },
     {
-      id: '2',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
-      moons: 'none',
-      borrowedDate: '22/03/2022',
-      returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
+        id: '2',
+        name: 'Da Vinci Code',
+        author: 'Dan Brown',
+        moons: 'none',
+        borrowedDate: '22/03/2022',
+        returnDate: '09/05/2022',
+        url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
     },
     {
       id: '3',
-      name: 'Da Vinci Code',
-      author: 'Dan Brown',
+      name: 'The Fault in Our Stars',
+      author: 'John Green',
       moons: 'none',
       borrowedDate: '22/03/2022',
       returnDate: '09/05/2022',
-      url: 'https://images.penguinrandomhouse.com/cover/9780307277671'
+      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
+    },
+    {
+      id: '4',
+      name: 'The Fault in Our Stars',
+      author: 'John Green',
+      moons: 'none',
+      borrowedDate: '22/03/2022',
+      returnDate: '09/05/2022',
+      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
+    },
+    {
+      id: '5',
+      name: 'The Fault in Our Stars',
+      author: 'John Green',
+      moons: 'none',
+      borrowedDate: '22/03/2022',
+      returnDate: '09/05/2022',
+      url: 'https://images-na.ssl-images-amazon.com/images/I/81a4kCNuH+L.jpg'
     }
+    
     // {
     //   id: '4',
     //   name: 'Mars',
@@ -93,13 +114,31 @@ const books = [
   ]
 const Books = (props) => {
     return (
-      <div className="card">
+      <div className="card crd">
         <div className="bookcovercont">
           <img className="bookCover" src={props.imgurl} alt="The Da Vinci Code"></img>
         </div>
-        <h2 className="bookTitle">{props.title}</h2>
-        <p>{props.author}</p>
-        <p>Return by : {props.retDate}</p>
+        <div className="dets">
+            <div className="auth-title">
+                
+                <h2 className="bookTitle">{props.title}</h2>
+                <p>{props.author}</p>
+            </div>
+            
+            <div className="dates bDets">
+                <h2>Borrowing details</h2>
+                <p>Borrowed on : {props.borrDate}</p>
+                <p>Return by : {props.retDate}</p>
+            
+            </div>
+            
+            <div className="manageB bDets">
+                <h2>Manage Return</h2>
+                <a href=""><p>View Return Receipt</p></a>
+                <a href=""><p>Apply for extension</p></a>
+            </div>
+
+        </div>
         
       </div>
     )
@@ -107,10 +146,10 @@ const Books = (props) => {
 
   const App = () => {
     return (
-      <div className="container" id="bookCards">
+      <div className="container">
   
         {books.map(books => (
-          <Books title={books.name} imgurl={books.url} author={books.author} retDate={books.returnDate}/>)
+          <Books title={books.name} imgurl={books.url} author={books.author} retDate={books.returnDate} borrDate={books.borrowedDate}/>)
         )}
   
       </div>
@@ -122,3 +161,4 @@ const Books = (props) => {
     <App />,
     document.getElementById('root')
   )
+
