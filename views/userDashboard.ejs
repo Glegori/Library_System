@@ -24,7 +24,7 @@
                     document.querySelector('.avatar').src = `${user[0].userpicture}`
                 </script> -->
                 <div class="profCont">
-                    <a href="/home"><p>Home</p></a>
+                    <a><p>Home</p></a>
                     <a href="/manageaccount"><p>Manage Library Account</p></a>
                     <a href="/borrow"><p>View Borrowings</p></a>
                     <a href="/returns"><p>Returns</p></a>
@@ -40,7 +40,7 @@
                 <div class="topSec" style=" display: grid; grid-template-columns: 4fr 1fr; column-gap: 10px; width: 100%;">
                     <div class="borrowedSec" style= "grid-row:1; grid-column : 1; width:100%; padding-top:0;"><h4 style="display: flex; justify-content: space-between;">Welcome <%= u %></h4>
                         <div.borTitle >
-                            <h5 style="display: flex; justify-content: space-between; border-bottom: 1px solid black; margin-top: 10px; padding-left: 10px;">Borrowed Books<a href="./borrow.htm"><p style="font-size: small; margin-right: 10px;">view all</p></a></h5>
+                            <h5 style="display: flex; justify-content: space-between; border-bottom: 1px solid black; margin-top: 10px; padding-left: 10px;">Borrowed Books<a href="/borrow"><p style="font-size: small; margin-right: 10px;">view all</p></a></h5>
                         </div.borTitle>
                     
                         <div id="root" style="display: flex; flex-direction: row;">
@@ -52,7 +52,7 @@
                         <div id="ret"></div>
                     </div>
                     <div class="bottomSec" style="grid-row: 2; width: 100%; height: 100%;  padding: 10px; padding-left:0">
-                        <h5 style="border-bottom: 1px solid black; display: flex; justify-content: space-between;; margin-top: 10px; padding-left: 10px;">Browse Library<a href="./libraryCatalog.htm"><p style="font-size: small; margin-right: 10px;">view all</p></a></h5>
+                        <h5 style="border-bottom: 1px solid black; display: flex; justify-content: space-between;; margin-top: 10px; padding-left: 10px;">Browse Library<a href="/libraryCatalog"><p style="font-size: small; margin-right: 10px;">view all</p></a></h5>
                         <div id="root2">
                     </div>
 

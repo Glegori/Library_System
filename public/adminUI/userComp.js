@@ -13,8 +13,8 @@ const books = [
     },
     {
         id: '2',
-        name: 'Amit Bhattacharya',
-        email: 'amit@gmail.com',
+        name: 'Raghuvansh Raj',
+        email: 'raj@gmail.com',
         address: '1188 Brookside Street',
         libraryId: '1001',
         pincode: 'V3E 5T2',
@@ -23,15 +23,34 @@ const books = [
       },
       {
         id: '3',
-        name: 'Amit Bhattacharya',
-        email: 'amit@gmail.com',
+        name: 'Greg Billings',
+        email: 'greg@gmail.com',
         address: '1188 Brookside Street',
         libraryId: '1001',
         pincode: 'V3E 5T2',
         phone: '6048768789',
         url: 'https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Round&hatColor=PastelBlue&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale'
       },
-    
+      {
+        id: '4',
+        name: 'Merryl Tuscano',
+        email: 'merryl@gmail.com',
+        address: '1188 Brookside Street',
+        libraryId: '1001',
+        pincode: 'V3E 5T2',
+        phone: '6048768789',
+        url: 'https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Round&hatColor=PastelBlue&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale'
+      },
+      {
+        id: '5',
+        name: 'Basil Joseph',
+        email: 'basil@gmail.com',
+        address: '1188 Brookside Street',
+        libraryId: '1001',
+        pincode: 'V3E 5T2',
+        phone: '6048768789',
+        url: 'https://avataaars.io/?avatarStyle=Circle&topType=WinterHat3&accessoriesType=Round&hatColor=PastelBlue&facialHairType=BeardLight&facialHairColor=Auburn&clotheType=BlazerSweater&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Pale'
+      }
     // {
     //   id: '4',
     //   name: 'Mars',
